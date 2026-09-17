@@ -49,7 +49,19 @@
     ]
   },
   "bigtech_india_sde_mle": {
-    "consecutive_failures": 2
+    "consecutive_failures": 0,
+    "items": [
+      "Avoca: Software Engineer (Product) | None, None | Date: 2026-09-14 | Apply: https://jobs.ashbyhq.com/avoca/ec05c135-ab26-437a-8fe9-f7a5c4da08e5",
+      "TekWissen India: Software Engineer - Dynamics 365 Customer Engagement (CE) | Chennai, IN | Date: 2026-09-17 | Apply: https://in.linkedin.com/jobs/view/software-engineer-dynamics-365-customer-engagement-ce-at-tekwissen-india-4467171842",
+      "Caterpillar: Software Engineer - D365 CE | None, None | Date: 2026-09-15 | Apply: https://careers.caterpillar.com/es/trabajos/r0000386724/software-engineer-d365-ce/",
+      "Ametek, Inc.: Software Engineer (India) | Bengaluru, IN | Date: 2026-09-16 | Apply: https://jobs.ametek.com/job/Bangalore-Software-Engineer-%28India%29-KA-560048/1410431200/",
+      "NatWest Digital X: Software Engineer, Workday | Gurugram, IN | Date: 2026-09-15 | Apply: https://jobs.natwestgroup.com/jobs/18214342-software-engineer-workday",
+      "NetApp: Software Engineer (Full Stack Engineer) | Bengaluru, IN | Date: 2026-09-14 | Apply: https://careers.netapp.com/job/bengaluru/software-engineer-full-stack-engineer/27600/96546594624",
+      "DRAIPL: SOFTWARE ENGINEER FOR UAV | Gurugram, IN | Date: 2026-09-17 | Apply: https://in.linkedin.com/jobs/view/software-engineer-for-uav-at-draipl-4468353796",
+      "Bayer: India HUB SiMD SW Engineer | Bengaluru, IN | Date: 2026-09-15 | Apply: https://talent.bayer.com/careers/job/562949978488231-india-hub-simd-sw-engineer-bangalore-karnataka-india?domain=bayer.com",
+      "Vontier: Principal Engineer, Software Engineering | Bengaluru, IN | Date: 2026-09-14 | Apply: https://careers.vontier.com/us/en/job/INV001530/Principal-Engineer-Software-Engineering",
+      "Sirion: Software Engineer-II-QA | Gurugram, IN | Date: 2026-09-15 | Apply: https://in.linkedin.com/jobs/view/software-engineer-ii-qa-at-sirion-4466819765"
+    ]
   },
   "hn_top_stories": {
     "consecutive_failures": 0,
