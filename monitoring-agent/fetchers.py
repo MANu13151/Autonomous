@@ -45,13 +45,18 @@ def fetch_json_items(target: dict) -> list[str]:
 
     elif extractor == "jsearch":
         items = []
-        for j in data.get("data", []):
-            title = j.get("job_title", "Unknown Role")
-            company = j.get("employer_name", "")
-            loc = f"{j.get('job_city', '')}, {j.get('job_country', '')}".strip(", ")
-            link = j.get("job_apply_link", "")
-            date = str(j.get("job_posted_at_datetime_utc", ""))[:10]
-            items.append(f"{company}: {title} | {loc} | Date: {date} | Apply: {link}")
+        raw_data = data.get("data", [])
+        job_list = raw_data.get("jobs", []) if isinstance(raw_data, dict) else raw_data
+        for j in job_list:
+            if isinstance(j, dict):
+                title = j.get("job_title", "Unknown Role")
+                company = j.get("employer_name", "")
+                city = j.get("job_city", "")
+                country = j.get("job_country", "")
+                loc = f"{city}, {country}".strip(", ")
+                link = j.get("job_apply_link", "")
+                date = str(j.get("job_posted_at_datetime_utc", ""))[:10]
+                items.append(f"{company}: {title} | {loc} | Date: {date} | Apply: {link}")
         return items
 
     elif "item_key" in target:
