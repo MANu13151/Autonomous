@@ -1,0 +1,45 @@
+name: Monitoring Agent
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 min — cheap to run since quiet runs skip LLM
+  workflow_dispatch: {}       # manual trigger anytime
+
+concurrency:
+  group: monitoring-agent
+  cancel-in-progress: false   # never overlap runs
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5        # hard ceiling
+    permissions:
+      contents: write          # needed to commit state.json back
+
+    defaults:
+      run:
+        working-directory: monitoring-agent
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run monitoring agent
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LANGCHAIN_API_KEY: ${{ secrets.LANGCHAIN_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python main.py
+
+      - name: Persist state
+        run: |
+          git config user.name "monitoring-agent"
+          git config user.email "actions@github.com"
+          git add state.json
+          git diff --staged --quiet || git commit -m "chore: update monitor state [skip ci]"
+          git push

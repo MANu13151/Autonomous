@@ -1,0 +1,5 @@
+langgraph
+langchain-groq
+requests
+beautifulsoup4
+pyyaml

@@ -1,0 +1,16 @@
+targets:
+  # Example: alert when NEW items appear on a jobs/listings page
+  - id: ml_jobs_wellfound
+    type: job_listing
+    url: "https://example-jobs-site.com/machine-learning-engineer"
+    selector: "div.job-listing"     # CSS selector for each item
+    alert_on: new_items
+    max_items_tracked: 30           # how many recent items to remember per target
+
+  # Example: alert only when a tracked VALUE changes (e.g. price drop)
+  - id: iphone16_price
+    type: price
+    url: "https://example-store.com/iphone-16"
+    selector: "span.price"
+    alert_on: value_change
+    direction: decrease             # "decrease" | "increase" | omit for any change
