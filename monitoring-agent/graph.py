@@ -16,7 +16,7 @@ from langchain_groq import ChatGroq
 from langgraph.graph import END, StateGraph
 
 from alerts import send_alert
-from fetchers import extract_items, fetch_page, hash_value
+from fetchers import extract_items, fetch_json_items, fetch_page, hash_value
 from guardrails import RunGuardrails
 from state_store import save_state
 
@@ -50,8 +50,11 @@ def fetch_node(state: MonitorState) -> MonitorState:
     for target in state["targets"]:
         tid = target["id"]
         try:
-            html = fetch_page(target["url"])
-            items = extract_items(html, target["selector"])
+            if target.get("type") == "json_api":
+                items = fetch_json_items(target)
+            else:
+                html = fetch_page(target["url"])
+                items = extract_items(html, target["selector"])
 
             if target["alert_on"] == "new_items":
                 prev_items = set(stored.get(tid, {}).get("items", []))
@@ -94,11 +97,11 @@ def summarize_node(state: MonitorState) -> MonitorState:
 
     broken = [e for e in state["fetch_errors"] if e["consecutive_failures"] >= 3]
     prompt = (
-        "Write a short alert digest (max 150 words, plain text, no markdown headers) "
-        "for a personal monitoring bot.\n\n"
-        f"Changes detected:\n{state['changes']}\n\n"
-        f"Sources that have failed 3+ runs in a row (likely a broken selector or site change):\n{broken}\n\n"
-        "Be concise and specific — name the items/prices, don't use generic phrasing."
+        "Write a concise job alert digest (max 200 words, plain text, no markdown headers) "
+        "for a software/ML engineer job monitor bot.\n\n"
+        f"New items / changes detected:\n{state['changes']}\n\n"
+        f"Sources that have failed 3+ runs in a row:\n{broken}\n\n"
+        "For jobs: include the title, location, and application link. Keep it actionable and clean."
     )
     result = llm.invoke(prompt)
     return {**state, "digest": result.content}

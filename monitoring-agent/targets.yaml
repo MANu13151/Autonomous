@@ -1,24 +1,42 @@
 targets:
-  # Active target: tracks new frontpage items on Hacker News
-  - id: hn_top_stories
-    type: tech_news
-    url: "https://news.ycombinator.com"
-    selector: "span.titleline > a"
+  # ==========================================================
+  # AMAZON JOBS (Direct API — 100% Free, Zero Keys Needed)
+  # ==========================================================
+
+  # Amazon India: Software Development Engineer (SDE I, II, Sr)
+  - id: amazon_india_sde
+    type: json_api
+    extractor: amazon_jobs
+    url: "https://www.amazon.jobs/en/search.json?base_query=Software+Development+Engineer&country=IND&sort=recent&result_limit=15"
     alert_on: new_items
-    max_items_tracked: 30
+    max_items_tracked: 60
 
-  # Template: alert when NEW items appear on a jobs/listings page
-  # - id: sample_job_listings
-  #   type: job_listing
-  #   url: "https://example-jobs-site.com/machine-learning-engineer"
-  #   selector: "div.job-listing"
+  # Amazon India: Machine Learning Engineer (MLE)
+  - id: amazon_india_mle
+    type: json_api
+    extractor: amazon_jobs
+    url: "https://www.amazon.jobs/en/search.json?base_query=Machine+Learning+Engineer&country=IND&sort=recent&result_limit=15"
+    alert_on: new_items
+    max_items_tracked: 60
+
+  # Amazon Global / Remote / Abroad: Machine Learning Engineer
+  - id: amazon_global_mle
+    type: json_api
+    extractor: amazon_jobs
+    url: "https://www.amazon.jobs/en/search.json?base_query=Machine+Learning+Engineer&sort=recent&result_limit=15"
+    alert_on: new_items
+    max_items_tracked: 60
+
+  # ==========================================================
+  # GOOGLE, MICROSOFT, ORACLE, CAPGEMINI (Via JSearch / RapidAPI)
+  # Uncomment when you add RAPIDAPI_KEY to your GitHub secrets!
+  # ==========================================================
+  # - id: google_microsoft_india_sde_mle
+  #   type: json_api
+  #   extractor: jsearch
+  #   url: "https://jsearch.p.rapidapi.com/search?query=Software%20Engineer%20OR%20Machine%20Learning%20Engineer%20at%20Google%20OR%20Microsoft%20OR%20Oracle%20OR%20Capgemini%20in%20India&date_posted=today&num_pages=1"
+  #   headers:
+  #     X-RapidAPI-Key: "${RAPIDAPI_KEY}"
+  #     X-RapidAPI-Host: "jsearch.p.rapidapi.com"
   #   alert_on: new_items
-  #   max_items_tracked: 30
-
-  # Template: alert only when a tracked VALUE changes (e.g. price drop)
-  # - id: sample_price_tracker
-  #   type: price
-  #   url: "https://example-store.com/item"
-  #   selector: "span.price"
-  #   alert_on: value_change
-  #   direction: decrease             # "decrease" | "increase" | omit for any change
+  #   max_items_tracked: 60
