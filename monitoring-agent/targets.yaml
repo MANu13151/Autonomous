@@ -29,14 +29,15 @@ targets:
 
   # ==========================================================
   # GOOGLE, MICROSOFT, ORACLE, CAPGEMINI (Via JSearch / RapidAPI)
-  # Uncomment when you add RAPIDAPI_KEY to your GitHub secrets!
   # ==========================================================
-  # - id: google_microsoft_india_sde_mle
-  #   type: json_api
-  #   extractor: jsearch
-  #   url: "https://jsearch.p.rapidapi.com/search?query=Software%20Engineer%20OR%20Machine%20Learning%20Engineer%20at%20Google%20OR%20Microsoft%20OR%20Oracle%20OR%20Capgemini%20in%20India&date_posted=today&num_pages=1"
-  #   headers:
-  #     X-RapidAPI-Key: "${RAPIDAPI_KEY}"
-  #     X-RapidAPI-Host: "jsearch.p.rapidapi.com"
-  #   alert_on: new_items
-  #   max_items_tracked: 60
+
+  # Google, Microsoft, Oracle, Capgemini India: SDE & MLE
+  - id: bigtech_india_sde_mle
+    type: json_api
+    extractor: jsearch
+    url: "https://jsearch.p.rapidapi.com/search-v2?query=Software%20Engineer%20OR%20Machine%20Learning%20Engineer%20at%20Google%20OR%20Microsoft%20OR%20Oracle%20OR%20Capgemini%20in%20India&date_posted=3days&page=1&num_pages=1"
+    headers:
+      X-RapidAPI-Key: "${RAPIDAPI_KEY}"
+      X-RapidAPI-Host: "jsearch.p.rapidapi.com"
+    alert_on: new_items
+    max_items_tracked: 60
