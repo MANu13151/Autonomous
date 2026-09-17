@@ -1,1 +1,25 @@
-{}
+{
+  "amazon_global_mle1": {
+    "consecutive_failures": 0,
+    "items": []
+  },
+  "amazon_india_associate": {
+    "consecutive_failures": 0,
+    "items": []
+  },
+  "amazon_india_sde1": {
+    "consecutive_failures": 0,
+    "items": [
+      "Software Development Engineer I, Amazon Payments | IN, TS, Hyderabad | Posted: September  7, 2026 | Link: https://www.amazon.jobs/en/jobs/10530940/software-development-engineer-i-amazon-payments",
+      "Software Development Engineer -I, IESP Merchant Tech | IN, KA, Bengaluru | Posted: August 24, 2026 | Link: https://www.amazon.jobs/en/jobs/10511883/software-development-engineer-i-iesp-merchant-tech",
+      "SDE, Alexa For Shopping | IN, KA, Bengaluru | Posted: July 20, 2026 | Link: https://www.amazon.jobs/en/jobs/10478388/sde-alexa-for-shopping",
+      "Software Development Engineer I, FinOps FP&A | IN, KA, Bengaluru | Posted: May 28, 2026 | Link: https://www.amazon.jobs/en/jobs/10432823/software-development-engineer-i-finops-fp-a"
+    ]
+  },
+  "bigtech_india_freshers": {
+    "consecutive_failures": 0,
+    "items": [
+      "Capgemini: Oracle CX CPQ | None, IN | Date: 2026-09-08 | Apply: https://in.linkedin.com/jobs/view/oracle-cx-cpq-at-capgemini-4464481450"
+    ]
+  }
+}
