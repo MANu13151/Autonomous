@@ -98,18 +98,27 @@ def summarize_node(state: MonitorState) -> MonitorState:
 
     broken = [e for e in state["fetch_errors"] if e["consecutive_failures"] >= 3]
     prompt = (
-        "Write a concise job alert digest (max 200 words, plain text, no markdown headers) "
-        "for a software/ML engineer job monitor bot.\n\n"
-        f"New items / changes detected:\n{state['changes']}\n\n"
-        f"Sources that have failed 3+ runs in a row:\n{broken}\n\n"
-        "For jobs: include the title, location, and application link. Keep it actionable and clean."
+        "You are an expert tech recruiter filter bot. The user is a FRESHER / NEW GRADUATE engineer with 0-1 years of experience.\n\n"
+        "Your task: Inspect the newly detected jobs below and ONLY output postings suitable for freshers / new joinees (0-1 years experience, SDE 1, Graduate Engineer, Associate, Junior, Entry-Level MLE, or open to freshers).\n\n"
+        "STRICT EXCLUSIONS:\n"
+        "1. STRICTLY EXCLUDE ANY role requiring 2+ years of experience.\n"
+        "2. STRICTLY EXCLUDE roles with: SDE II, SDE III, Senior, Sr., Lead, Staff, Principal, Manager, Architect.\n\n"
+        "FORMATTING:\n"
+        "- For every qualified job, output a clean bullet point: '• [Company] [Title] | [Location] | Apply: [Link]'\n"
+        "- If NONE of the detected jobs are suitable for freshers / 0-1 years, respond with ONLY: NO_FRESHER_JOBS\n\n"
+        f"Jobs detected:\n{state['changes']}\n\n"
+        f"Sources that have failed 3+ runs in a row:\n{broken}\n"
     )
     result = llm.invoke(prompt)
     return {**state, "digest": result.content}
 
 
 def alert_node(state: MonitorState) -> MonitorState:
-    send_alert(os.environ["DISCORD_WEBHOOK_URL"], state["digest"])
+    digest = state["digest"].strip()
+    if not digest or "NO_FRESHER_JOBS" in digest:
+        print("[INFO] No 0-1 year / fresher jobs in this run. Skipping Discord alert.")
+        return state
+    send_alert(os.environ["DISCORD_WEBHOOK_URL"], digest)
     return state
 
 

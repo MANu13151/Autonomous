@@ -1,43 +1,47 @@
 targets:
   # ==========================================================
-  # AMAZON JOBS (Direct API — 100% Free, Zero Keys Needed)
+  # AMAZON JOBS — FRESHER & 0-1 YEAR ONLY (SDE 1 & Associate)
   # ==========================================================
 
-  # Amazon India: Software Development Engineer (SDE I, II, Sr)
-  - id: amazon_india_sde
+  # Amazon India: Software Development Engineer I (SDE 1)
+  - id: amazon_india_sde1
     type: json_api
     extractor: amazon_jobs
-    url: "https://www.amazon.jobs/en/search.json?base_query=Software+Development+Engineer&country=IND&sort=recent&result_limit=15"
+    fresher_only: true
+    url: "https://www.amazon.jobs/en/search.json?base_query=Software+Development+Engineer+I&country=IND&sort=recent&result_limit=15"
     alert_on: new_items
-    max_items_tracked: 60
+    max_items_tracked: 50
 
-  # Amazon India: Machine Learning Engineer (MLE)
-  - id: amazon_india_mle
+  # Amazon India: Associate / Graduate Software Engineer
+  - id: amazon_india_associate
     type: json_api
     extractor: amazon_jobs
-    url: "https://www.amazon.jobs/en/search.json?base_query=Machine+Learning+Engineer&country=IND&sort=recent&result_limit=15"
+    fresher_only: true
+    url: "https://www.amazon.jobs/en/search.json?base_query=Associate+Software+Engineer&country=IND&sort=recent&result_limit=15"
     alert_on: new_items
-    max_items_tracked: 60
+    max_items_tracked: 50
 
-  # Amazon Global / Remote / Abroad: Machine Learning Engineer
-  - id: amazon_global_mle
+  # Amazon Global: Entry-Level Machine Learning Engineer (MLE 1)
+  - id: amazon_global_mle1
     type: json_api
     extractor: amazon_jobs
-    url: "https://www.amazon.jobs/en/search.json?base_query=Machine+Learning+Engineer&sort=recent&result_limit=15"
+    fresher_only: true
+    url: "https://www.amazon.jobs/en/search.json?base_query=Machine+Learning+Engineer+I&sort=recent&result_limit=15"
     alert_on: new_items
-    max_items_tracked: 60
+    max_items_tracked: 50
 
   # ==========================================================
-  # GOOGLE, MICROSOFT, ORACLE, CAPGEMINI (Via JSearch / RapidAPI)
+  # GOOGLE, MICROSOFT, ORACLE, CAPGEMINI (Freshers / 0-1 Years)
   # ==========================================================
 
-  # Google, Microsoft, Oracle, Capgemini India: SDE & MLE
-  - id: bigtech_india_sde_mle
+  # BigTech India: Freshers, Graduates, Junior & SDE 1 Roles
+  - id: bigtech_india_freshers
     type: json_api
     extractor: jsearch
-    url: "https://jsearch.p.rapidapi.com/search-v2?query=Software%20Engineer%20OR%20Machine%20Learning%20Engineer%20at%20Google%20OR%20Microsoft%20OR%20Oracle%20OR%20Capgemini%20in%20India&date_posted=3days&page=1&num_pages=1"
+    fresher_only: true
+    url: "https://jsearch.p.rapidapi.com/search-v2?query=(%22Software%20Engineer%22%20OR%20%22Machine%20Learning%20Engineer%22%20OR%20%22SDE%22)%20(Fresher%20OR%20%22Entry%20Level%22%20OR%20Graduate%20OR%20Associate%20OR%20Junior%20OR%20%22SDE%201%22%20OR%20%220-1%22)%20(Google%20OR%20Microsoft%20OR%20Oracle%20OR%20Capgemini)%20in%20India&date_posted=3days&page=1&num_pages=1"
     headers:
       X-RapidAPI-Key: "${RAPIDAPI_KEY}"
       X-RapidAPI-Host: "jsearch.p.rapidapi.com"
     alert_on: new_items
-    max_items_tracked: 60
+    max_items_tracked: 50
