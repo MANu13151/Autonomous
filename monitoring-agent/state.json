@@ -1,4 +1,53 @@
 {
+  "amazon_global_mle": {
+    "consecutive_failures": 0,
+    "items": [
+      "Machine Learning Engineer, AICE - AI Center of Excellence | CA, BC, Vancouver | Posted: September 17, 2026 | Link: https://www.amazon.jobs/en/jobs/10551579/machine-learning-engineer-aice-ai-center-of-excellence",
+      "Software Dev Engineer, Machine Learning Compilers, Edge AI Compiler and Runtime Team | CA, BC, Vancouver | Posted: September 14, 2026 | Link: https://www.amazon.jobs/en/jobs/10539293/software-dev-engineer-machine-learning-compilers-edge-ai-compiler-and-runtime-team",
+      "Senior Machine Learning Engineer, Alexa-Conv A Modeling&Learning | US, WA, Bellevue | Posted: September  4, 2026 | Link: https://www.amazon.jobs/en/jobs/10530390/senior-machine-learning-engineer-alexa-conv-a-modeling-learning",
+      "Sr. Machine Learning Engineer, Sponsored Products and Brands | US, WA, Seattle | Posted: September  6, 2026 | Link: https://www.amazon.jobs/en/jobs/10530734/sr-machine-learning-engineer-sponsored-products-and-brands",
+      "Machine Learning - Compiler Engineer , AWS Neuron, Annapurna Labs | US, CA, Cupertino | Posted: September  3, 2026 | Link: https://www.amazon.jobs/en/jobs/10528817/machine-learning-compiler-engineer-aws-neuron-annapurna-labs",
+      "Sr. Machine Learning Engineer, AGI | US, CA, Sunnyvale | Posted: September 17, 2026 | Link: https://www.amazon.jobs/en/jobs/10552130/sr-machine-learning-engineer-agi",
+      "DFT Design Engineer, Machine Learning Acceleration | US, TX, Austin | Posted: September  1, 2026 | Link: https://www.amazon.jobs/en/jobs/10524364/dft-design-engineer-machine-learning-acceleration",
+      "Senior ML Performance Engineer, Annapurna Labs  | IL, Tel Aviv | Posted: August 24, 2026 | Link: https://www.amazon.jobs/en/jobs/10512060/senior-ml-performance-engineer-annapurna-labs",
+      "Senior MLE, CreativeFlux, AI Studios  | US, NY, New York | Posted: August 25, 2026 | Link: https://www.amazon.jobs/en/jobs/10513627/senior-mle-creativeflux-ai-studios",
+      "Machine Learning Engineer, Amazon Ads Identity | US, CA, Palo Alto | Posted: September  8, 2026 | Link: https://www.amazon.jobs/en/jobs/10532410/machine-learning-engineer-amazon-ads-identity",
+      "Senior Machine Learning Engineer, Neuro-Symbolic AI Labs | US, MA, Boston | Posted: August 17, 2026 | Link: https://www.amazon.jobs/en/jobs/10503587/senior-machine-learning-engineer-neuro-symbolic-ai-labs",
+      "Machine Learning Engineer, Amazon Music - Catalog Quality | IN, KA, Bengaluru | Posted: August 21, 2026 | Link: https://www.amazon.jobs/en/jobs/10510880/machine-learning-engineer-amazon-music-catalog-quality",
+      "Sr. Software Engineer- AI/ML, AWS Neuron Distributed Training | US, CA, Cupertino | Posted: August 26, 2026 | Link: https://www.amazon.jobs/en/jobs/10515931/sr-software-engineer-ai-ml-aws-neuron-distributed-training",
+      "Delivery Consultant- AI/ML, WWPS ProServe Delivery Team | US, VA, Arlington | Posted: August  7, 2026 | Link: https://www.amazon.jobs/en/jobs/10495923/delivery-consultant-ai-ml-wwps-proserve-delivery-team",
+      "Delivery Consultant- AI/ML, WWPS ProServe Delivery Team | US, VA, Arlington | Posted: August  7, 2026 | Link: https://www.amazon.jobs/en/jobs/10495920/delivery-consultant-ai-ml-wwps-proserve-delivery-team"
+    ]
+  },
+  "amazon_india_mle": {
+    "consecutive_failures": 0,
+    "items": [
+      "Machine Learning Engineer, Amazon Music - Catalog Quality | IN, KA, Bengaluru | Posted: August 21, 2026 | Link: https://www.amazon.jobs/en/jobs/10510880/machine-learning-engineer-amazon-music-catalog-quality",
+      "Machine Learning Engineer, Amazon Music - Catalog Quality | IN, KA, Bengaluru | Posted: July 28, 2026 | Link: https://www.amazon.jobs/en/jobs/10486421/machine-learning-engineer-amazon-music-catalog-quality",
+      "Machine Learning Engineer, Amazon Music - Catalog Quality | IN, KA, Bengaluru | Posted: July 28, 2026 | Link: https://www.amazon.jobs/en/jobs/10486419/machine-learning-engineer-amazon-music-catalog-quality",
+      "Machine Learning Engineer II, EU INTech - Exports, Emerging and Expansions | IN, KA, Bengaluru | Posted: May 13, 2026 | Link: https://www.amazon.jobs/en/jobs/10418966/machine-learning-engineer-ii-eu-intech-exports-emerging-and-expansions"
+    ]
+  },
+  "amazon_india_sde": {
+    "consecutive_failures": 0,
+    "items": [
+      "Software Development Engineer II, AWS OpenSearch | IN, KA, Bengaluru | Posted: September 17, 2026 | Link: https://www.amazon.jobs/en/jobs/10552379/software-development-engineer-ii-aws-opensearch",
+      "Sr. Software Development Engineer, Multichannel Commerce and Fulfilment Services, Santos | IN, KA, Bengaluru | Posted: September 17, 2026 | Link: https://www.amazon.jobs/en/jobs/10551504/sr-software-development-engineer-multichannel-commerce-and-fulfilment-services-santos",
+      "Software Development Engineer, Amazon OpenSearch Service - Plugins and Security | IN, KA, Bengaluru | Posted: September 15, 2026 | Link: https://www.amazon.jobs/en/jobs/10543108/software-development-engineer-amazon-opensearch-service-plugins-and-security",
+      "Software Development Engineer, Amazon OpenSearch Service - Control Plane | IN, KA, Bengaluru | Posted: September 15, 2026 | Link: https://www.amazon.jobs/en/jobs/10543018/software-development-engineer-amazon-opensearch-service-control-plane",
+      "Software Development Engineer, Sidewalk Cloud | IN, KA, Bengaluru | Posted: September 15, 2026 | Link: https://www.amazon.jobs/en/jobs/10543432/software-development-engineer-sidewalk-cloud",
+      "Software Development Engineer III, HST Health Foundation | IN, KA, Bengaluru | Posted: September 17, 2026 | Link: https://www.amazon.jobs/en/jobs/10552117/software-development-engineer-iii-hst-health-foundation",
+      "Software Development Engineer - II | IN, TS, Hyderabad | Posted: September 16, 2026 | Link: https://www.amazon.jobs/en/jobs/10545155/software-development-engineer-ii",
+      "Software Development Engineer - II | IN, TS, Hyderabad | Posted: September 16, 2026 | Link: https://www.amazon.jobs/en/jobs/10545214/software-development-engineer-ii",
+      "Software Development Engineer - II | IN, TS, Hyderabad | Posted: September 16, 2026 | Link: https://www.amazon.jobs/en/jobs/10545175/software-development-engineer-ii",
+      "Software Development Engineer II, Tax Services | IN, TS, Hyderabad | Posted: September 15, 2026 | Link: https://www.amazon.jobs/en/jobs/10541335/software-development-engineer-ii-tax-services",
+      "Software Development Engineer II, Amazon Now (Tez) | IN, KA, Bengaluru | Posted: September 14, 2026 | Link: https://www.amazon.jobs/en/jobs/10538347/software-development-engineer-ii-amazon-now-tez",
+      "Software Development Engineer II, Amazon Pharmacy | IN, KA, Bengaluru | Posted: September 17, 2026 | Link: https://www.amazon.jobs/en/jobs/10552119/software-development-engineer-ii-amazon-pharmacy",
+      "Software Development Engineer II, Recipient Experience, Recipient Experience | IN, TS, Hyderabad | Posted: September 10, 2026 | Link: https://www.amazon.jobs/en/jobs/10536816/software-development-engineer-ii-recipient-experience-recipient-experience",
+      "Software Development Engineer II, FinTech | IN, TS, Hyderabad | Posted: September  7, 2026 | Link: https://www.amazon.jobs/en/jobs/10530932/software-development-engineer-ii-fintech",
+      "Software Development Engineer II, TFS | IN, KA, Bengaluru | Posted: September  8, 2026 | Link: https://www.amazon.jobs/en/jobs/10531789/software-development-engineer-ii-tfs"
+    ]
+  },
   "hn_top_stories": {
     "consecutive_failures": 0,
     "items": [
