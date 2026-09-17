@@ -1,16 +1,24 @@
 targets:
-  # Example: alert when NEW items appear on a jobs/listings page
-  - id: ml_jobs_wellfound
-    type: job_listing
-    url: "https://example-jobs-site.com/machine-learning-engineer"
-    selector: "div.job-listing"     # CSS selector for each item
+  # Active target: tracks new frontpage items on Hacker News
+  - id: hn_top_stories
+    type: tech_news
+    url: "https://news.ycombinator.com"
+    selector: "span.titleline > a"
     alert_on: new_items
-    max_items_tracked: 30           # how many recent items to remember per target
+    max_items_tracked: 30
 
-  # Example: alert only when a tracked VALUE changes (e.g. price drop)
-  - id: iphone16_price
-    type: price
-    url: "https://example-store.com/iphone-16"
-    selector: "span.price"
-    alert_on: value_change
-    direction: decrease             # "decrease" | "increase" | omit for any change
+  # Template: alert when NEW items appear on a jobs/listings page
+  # - id: sample_job_listings
+  #   type: job_listing
+  #   url: "https://example-jobs-site.com/machine-learning-engineer"
+  #   selector: "div.job-listing"
+  #   alert_on: new_items
+  #   max_items_tracked: 30
+
+  # Template: alert only when a tracked VALUE changes (e.g. price drop)
+  # - id: sample_price_tracker
+  #   type: price
+  #   url: "https://example-store.com/item"
+  #   selector: "span.price"
+  #   alert_on: value_change
+  #   direction: decrease             # "decrease" | "increase" | omit for any change
