@@ -49,7 +49,7 @@
     ]
   },
   "bigtech_india_sde_mle": {
-    "consecutive_failures": 1
+    "consecutive_failures": 2
   },
   "hn_top_stories": {
     "consecutive_failures": 0,
