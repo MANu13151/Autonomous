@@ -26,7 +26,8 @@ def fetch_json_items(target: dict) -> list[str]:
         for k, v in target["headers"].items():
             headers[k] = os.path.expandvars(str(v))
 
-    resp = requests.get(url, timeout=15, headers=headers)
+    timeout = target.get("timeout", 25)
+    resp = requests.get(url, timeout=timeout, headers=headers)
     resp.raise_for_status()
     data = resp.json()
 

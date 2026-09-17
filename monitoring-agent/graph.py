@@ -79,6 +79,7 @@ def fetch_node(state: MonitorState) -> MonitorState:
             failures = stored.get(tid, {}).get("consecutive_failures", 0) + 1
             stored.setdefault(tid, {})["consecutive_failures"] = failures
             errors.append({"id": tid, "error": str(e), "consecutive_failures": failures})
+            print(f"[ERROR] Target '{tid}' failed: {e}")
 
     return {**state, "stored_state": stored, "changes": changes, "fetch_errors": errors}
 
