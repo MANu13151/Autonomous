@@ -93,21 +93,44 @@ def route_after_fetch(state: MonitorState) -> str:
 
 def summarize_node(state: MonitorState) -> MonitorState:
     guardrails.register_llm_call()
-    model = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
+    model = os.environ.get("GROQ_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct")
     llm = ChatGroq(model=model, temperature=0)
 
     broken = [e for e in state["fetch_errors"] if e["consecutive_failures"] >= 3]
+
+    # Load the resume profile for context-aware matching
+    profile_path = os.path.join(os.path.dirname(__file__), "profile.md")
+    try:
+        with open(profile_path) as pf:
+            resume_profile = pf.read()
+    except FileNotFoundError:
+        resume_profile = "No resume profile available."
+
     prompt = (
-        "You are an expert tech recruiter filter bot. The user is a FRESHER / NEW GRADUATE engineer with 0-1 years of experience.\n\n"
-        "Your task: Inspect the newly detected jobs below and ONLY output postings suitable for freshers / new joinees (0-1 years experience, SDE 1, Graduate Engineer, Associate, Junior, Entry-Level MLE, or open to freshers).\n\n"
-        "STRICT EXCLUSIONS:\n"
-        "1. STRICTLY EXCLUDE ANY role requiring 2+ years of experience.\n"
-        "2. STRICTLY EXCLUDE roles with: SDE II, SDE III, Senior, Sr., Lead, Staff, Principal, Manager, Architect.\n\n"
-        "FORMATTING:\n"
-        "- For every qualified job, output a clean bullet point: '• [Company] [Title] | [Location] | Apply: [Link]'\n"
-        "- If NONE of the detected jobs are suitable for freshers / 0-1 years, respond with ONLY: NO_FRESHER_JOBS\n\n"
-        f"Jobs detected:\n{state['changes']}\n\n"
-        f"Sources that have failed 3+ runs in a row:\n{broken}\n"
+        "You are Prakhar's PERSONAL AI recruiter. Your job: match newly detected job postings "
+        "against his actual resume profile below, and ONLY surface roles he is genuinely qualified for.\n\n"
+        "═══ PRAKHAR'S RESUME PROFILE ═══\n"
+        f"{resume_profile}\n"
+        "═══ END PROFILE ═══\n\n"
+        "MATCHING RULES:\n"
+        "1. EXPERIENCE GATE: ONLY include roles requiring 0-2 years of experience. "
+        "REJECT any role requiring 3+ years, or that says SDE II, SDE III, Senior, Sr., Lead, Staff, Principal, Architect, Manager.\n"
+        "2. SKILL MATCH: The job must require skills Prakhar actually has (Python, SQL, Swift, JavaScript, "
+        "FastAPI, RAG, LLM, GenAI, ML, Docker, PostgreSQL, Redis, AWS, SwiftUI, Vite, etc.). "
+        "Reject roles primarily requiring skills he doesn't have (Java, C++, Scala, Spark, Hadoop, Ruby, Go, Rust, Angular, Vue.js).\n"
+        "3. ROLE FIT: Prioritize roles aligned with his project experience — AI/ML engineering, backend Python, "
+        "GenAI/LLM platforms, RAG systems, iOS development, and full-stack web.\n\n"
+        "OUTPUT FORMAT:\n"
+        "For EACH matching job, output exactly this format:\n"
+        "🟢 **STRONG MATCH** — if ≥3 of Prakhar's core skills directly match the role\n"
+        "🟡 **MODERATE MATCH** — if 2 skills match, or the role is a general SDE/MLE entry-level\n\n"
+        "Format each as:\n"
+        "[🟢/🟡] **Company — Title** | Location | Apply: Link\n"
+        "   Skills matched: [list matching skills]\n\n"
+        "If NONE of the detected jobs match Prakhar's profile, respond with ONLY: NO_MATCHING_JOBS\n\n"
+        "If there are broken sources (failed 3+ runs), append a ⚠️ section at the end listing them.\n\n"
+        f"═══ NEWLY DETECTED JOBS ═══\n{state['changes']}\n\n"
+        f"═══ BROKEN SOURCES ═══\n{broken}\n"
     )
     result = llm.invoke(prompt)
     return {**state, "digest": result.content}
@@ -115,8 +138,8 @@ def summarize_node(state: MonitorState) -> MonitorState:
 
 def alert_node(state: MonitorState) -> MonitorState:
     digest = state["digest"].strip()
-    if not digest or "NO_FRESHER_JOBS" in digest:
-        print("[INFO] No 0-1 year / fresher jobs in this run. Skipping Discord alert.")
+    if not digest or "NO_MATCHING_JOBS" in digest or "NO_FRESHER_JOBS" in digest:
+        print("[INFO] No resume-matching jobs in this run. Skipping Discord alert.")
         return state
     send_alert(os.environ["DISCORD_WEBHOOK_URL"], digest)
     return state
