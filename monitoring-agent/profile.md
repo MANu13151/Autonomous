@@ -50,7 +50,10 @@
 - Full Stack Developer (Junior / Entry Level)
 - iOS Developer (Junior / Entry Level)
 
-## Experience Ceiling
+## Experience Ceiling & Strict Exclusions
 - MAXIMUM: 0-2 years required experience
-- EXCLUDE: Any role requiring 3+ years of professional experience
-- EXCLUDE: Senior, Sr., Lead, Staff, Principal, Architect, Manager, Director titles
+- REJECT: Any role requiring 3+ years of professional experience, or ranges like 4-12 years, 3-5 years, etc.
+- REJECT: Senior, Sr., Lead, Staff, Principal, Architect, Manager, Director, SDE II, SDE III titles
+- REJECT: Data Analyst, Business Analyst, BI Analyst, Data Analytics, QA Analyst (Prakhar is an SDE/MLE/Backend engineer, not an analyst)
+- REJECT: US Citizen required, Green Card required, Security Clearance, Locals Only
+- LOCATION: India (onsite or remote) OR Worldwide 100% Remote (or explicit visa sponsorship if abroad)
