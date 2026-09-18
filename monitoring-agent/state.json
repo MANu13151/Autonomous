@@ -9,9 +9,7 @@
   },
   "bigtech_india_engineering": {
     "consecutive_failures": 0,
-    "items": [
-      "PwC Acceleration Center India: UK_Fullstack developer_ Associate | None, IN | Date: 2026-09-07 | Apply: https://in.linkedin.com/jobs/view/uk-fullstack-developer-associate-at-pwc-acceleration-center-india-4423635696"
-    ]
+    "items": []
   },
   "india_ios_swift": {
     "consecutive_failures": 0,
@@ -21,9 +19,7 @@
   },
   "india_ml_ai_genai": {
     "consecutive_failures": 0,
-    "items": [
-      "Tezvyn: Junior Data Scientist | Hyderabad, IN | Date: 2026-09-03 | Apply: https://in.linkedin.com/jobs/view/junior-data-scientist-at-tezvyn-4460451369?position=53&pageNum=0&refId=qaoCxm1TDXTgkAVEiHebCg%3D%3D&trackingId=ZCVJIucmAeOAN%2Fve86Bu1w%3D%3D"
-    ]
+    "items": []
   },
   "india_python_fastapi": {
     "consecutive_failures": 0,
@@ -45,7 +41,7 @@
     "items": []
   },
   "remote_worldwide_sde": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   }
 }
