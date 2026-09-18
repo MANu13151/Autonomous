@@ -1,1 +1,73 @@
-{}
+{
+  "amazon_global_appliedscientist": {
+    "consecutive_failures": 0,
+    "items": [
+      "Applied Scientist, Mobile Manipulation Robotics (I/O) | US, MA, North Reading | Posted: April 15, 2026 | Link: https://www.amazon.jobs/en/jobs/10393255/applied-scientist-mobile-manipulation-robotics-i-o"
+    ]
+  },
+  "amazon_global_mle1": {
+    "consecutive_failures": 0,
+    "items": []
+  },
+  "amazon_india_associate": {
+    "consecutive_failures": 0,
+    "items": []
+  },
+  "amazon_india_sde1": {
+    "consecutive_failures": 0,
+    "items": []
+  },
+  "bigtech_global_freshers": {
+    "consecutive_failures": 0,
+    "items": [
+      "Lockheed Martin: Database Engineer - Entry Level | Annapolis Junction, US | Date: None | Apply: https://www.linkedin.com/jobs/view/database-engineer-entry-level-at-lockheed-martin-4451270592",
+      "Capgemini: Junior Frontend Developer | Dallas, US | Date: 2026-09-12 | Apply: https://www.linkedin.com/jobs/view/junior-frontend-developer-at-capgemini-4465884901",
+      "TikTok: Data Engineer Graduate (Data Platfrom TikTok BP) - 2027 Start | San Jose, US | Date: 2026-09-07 | Apply: https://www.linkedin.com/jobs/view/data-engineer-graduate-data-platfrom-tiktok-bp-2027-start-at-tiktok-4462940297",
+      "IBM: Entry Level Software Developer-Different locations | Rochester, US | Date: 2026-09-15 | Apply: https://www.linkedin.com/jobs/view/entry-level-software-developer-different-locations-at-ibm-4456513989",
+      "Epic: Entry-Level Software Developer | Chicago, US | Date: 2026-08-27 | Apply: https://www.linkedin.com/jobs/view/entry-level-software-developer-at-epic-4363407597",
+      "Nokia: Jr. Software Developer | Coppell, US | Date: 2026-09-16 | Apply: https://www.linkedin.com/jobs/view/jr-software-developer-at-nokia-4465904788"
+    ]
+  },
+  "global_ios_swift": {
+    "consecutive_failures": 0,
+    "items": [
+      "AnchorFree: iOS Developer | Mountain View, US | Date: 2026-09-15 | Apply: https://www.linkedin.com/jobs/view/ios-developer-at-anchorfree-4467261340",
+      "Deviark: IOS DEVELOPER | None, US | Date: None | Apply: https://www.linkedin.com/jobs/view/ios-developer-at-deviark-4442363309",
+      "Zillion Technologies, Inc.: iOS Developer  - Hybrid Role ---LOCALS ONLY | San Diego, US | Date: None | Apply: https://bebee.com/us/jobs/ios-developer-hybrid-role-locals-only-zillion-technologies-inc-san-diego-ca--t7xk-805997211"
+    ]
+  },
+  "global_sde_entry": {
+    "consecutive_failures": 0,
+    "items": []
+  },
+  "india_fastapi_fullstack": {
+    "consecutive_failures": 0,
+    "items": [
+      "LetzBizz: Backend Engineer \u2013 Python, FastAPI, Agentic AI &#038; LLM | Chennai, IN | Date: 2026-08-31 | Apply: https://in.linkedin.com/jobs/view/backend-engineer-%E2%80%93-python-fastapi-agentic-ai-%23038-llm-at-letzbizz-4461054382",
+      "Mansi2869476: Full Stack Developer Hiring for Freshers, Nagpur (India) | Nagpur, IN | Date: None | Apply: https://www.shine.com/jobs/full-stack-developer-hiring-for-freshers-nagpur-india/mansi2869476/19471155",
+      "Deebaa Workforce India: Full Stack Software Developer \u2013 Fresher | None, IN | Date: 2026-09-16 | Apply: https://www.simplyhired.co.in/job/EoaE-ou5oPwpb8x-a1GphghX9eKeefFv55OCiESmRCtvq5qX25TGew",
+      "DigitalXNode: Machine Learning Engineer Jobs in Pune \u2013 AI, NLP, Python, FastAPI | None, IN | Date: None | Apply: https://in.linkedin.com/jobs/view/machine-learning-engineer-jobs-in-pune-%E2%80%93-ai-nlp-python-fastapi-at-digitalxnode-4437479288",
+      "NatWest Digital X: Software Engineer, Full stack | Bengaluru, IN | Date: 2026-09-14 | Apply: https://jobs.natwestgroup.com/jobs/18214680-software-engineer-full-stack",
+      "Teravista.io Private Limited: Software Engineer(Backend / Full-Stack) | Mumbai, IN | Date: None | Apply: https://in.linkedin.com/jobs/view/software-engineer-backend-full-stack-at-teravista-io-private-limited-4439544388",
+      "Vidyalai: Full Stack Development Internship in Cochin | Kochi, IN | Date: 2026-09-15 | Apply: https://in.linkedin.com/jobs/view/full-stack-development-internship-in-cochin-at-vidyalai-4467410588",
+      "Infosys: Java Full Stack Developer_ STG(Pan India) | None, IN | Date: 2026-09-16 | Apply: https://www.jobleads.com/in/job/java-full-stack-developer-stg-pan-india--hyderabad--chennai-district--bengaluru--e075127d6e203bdf2fae08893f6aafa51"
+    ]
+  },
+  "india_ml_genai_freshers": {
+    "consecutive_failures": 0,
+    "items": [
+      "Tezvyn: Junior Data Scientist | Hyderabad, IN | Date: 2026-09-03 | Apply: https://in.linkedin.com/jobs/view/junior-data-scientist-at-tezvyn-4460451369?position=53&pageNum=0&refId=qaoCxm1TDXTgkAVEiHebCg%3D%3D&trackingId=ZCVJIucmAeOAN%2Fve86Bu1w%3D%3D"
+    ]
+  },
+  "india_sde_freshers": {
+    "consecutive_failures": 1
+  },
+  "remote_ml_ai_genai": {
+    "consecutive_failures": 0,
+    "items": []
+  },
+  "remote_python_sde": {
+    "consecutive_failures": 0,
+    "items": []
+  }
+}
