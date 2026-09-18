@@ -93,7 +93,7 @@ def route_after_fetch(state: MonitorState) -> str:
 
 def summarize_node(state: MonitorState) -> MonitorState:
     guardrails.register_llm_call()
-    model = os.environ.get("GROQ_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct")
+    model = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
     llm = ChatGroq(model=model, temperature=0)
 
     broken = [e for e in state["fetch_errors"] if e["consecutive_failures"] >= 3]
