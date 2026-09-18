@@ -112,12 +112,6 @@ def summarize_node(state: MonitorState) -> MonitorState:
         "═══ PRAKHAR'S RESUME PROFILE ═══\n"
         f"{resume_profile}\n"
         "═══ END PROFILE ═══\n\n"
-    prompt = (
-        "You are Prakhar's PERSONAL AI recruiter. Your job: match newly detected job postings "
-        "against his actual resume profile below, and ONLY surface roles he is genuinely qualified for.\n\n"
-        "═══ PRAKHAR'S RESUME PROFILE ═══\n"
-        f"{resume_profile}\n"
-        "═══ END PROFILE ═══\n\n"
         "STRICT EXCLUSION RULES (CRITICAL):\n"
         "1. EXPERIENCE CEILING: MUST BE 0-2 YEARS MAXIMUM. Immediately REJECT ANY role requiring 3+ years, "
         "or ranges like '4-12 years', '3-5 years', or labeled SDE II, SDE III, Senior, Sr., Lead, Staff, Principal, Architect, Manager.\n"
