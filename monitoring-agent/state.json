@@ -13,7 +13,9 @@
   },
   "bigtech_india_engineering": {
     "consecutive_failures": 0,
-    "items": []
+    "items": [
+      "Accenture in India: Associate Engineer - Backend | Kochi, IN | Date: 2026-09-18 | Apply: https://in.linkedin.com/jobs/view/associate-engineer-backend-at-accenture-in-india-4469243020"
+    ]
   },
   "india_ios_swift": {
     "consecutive_failures": 0,
@@ -46,7 +48,7 @@
     "items": []
   },
   "remote_worldwide_sde": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   }
 }
