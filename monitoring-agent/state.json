@@ -12,45 +12,45 @@
     "items": []
   },
   "bigtech_india_engineering": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": [
       "Accenture in India: AI/ML Computational Science Associate | Hyderabad, IN | Date: 2026-09-02 | Apply: https://in.linkedin.com/jobs/view/ai-ml-computational-science-associate-at-accenture-in-india-4462467393"
     ]
   },
   "india_ios_swift": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": [
       "Unikwork: iOS Developer Intern (India) | Surat, IN | Date: None | Apply: https://www.shine.com/jobs/ios-developer-intern-india/unikwork/19448816"
     ]
   },
   "india_ml_ai_genai": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": [
       "DBXSmartOpsAI: Junior AI Engineer  Training Program | None, IN | Date: None | Apply: https://www.shine.com/jobs/junior-ai-engineer-training-program/dbxsmartopsai/19258692",
       "AI CERTs\u00ae - India: ML Developer (Machine Learning Developer) | Gandhinagar, IN | Date: None | Apply: https://in.linkedin.com/jobs/view/ml-developer%C2%A0-machine-learning-developer-at-ai-certs%C2%AE-india-4412281356"
     ]
   },
   "india_python_fastapi": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": [
       "Bonami Software Private: Python Developer- Pune (India) | Pune, IN | Date: None | Apply: https://www.shine.com/jobs/python-developer-pune-india/bonami-software-private/19287164",
       "PrimefactorX: Fresher Python Developer | Chennai, IN | Date: None | Apply: https://www.jobaaj.com/job/primefactorx-fresher-python-developer-chennai-tamil-nadu-india-0-to-1-years-464943"
     ]
   },
   "india_sde_entry": {
-    "consecutive_failures": 1,
+    "consecutive_failures": 2,
     "items": []
   },
   "remote_worldwide_ai_ml": {
-    "consecutive_failures": 1,
+    "consecutive_failures": 2,
     "items": []
   },
   "remote_worldwide_ios": {
-    "consecutive_failures": 1,
+    "consecutive_failures": 2,
     "items": []
   },
   "remote_worldwide_sde": {
-    "consecutive_failures": 1,
+    "consecutive_failures": 2,
     "items": []
   }
 }
