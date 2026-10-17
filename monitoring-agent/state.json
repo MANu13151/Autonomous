@@ -30,10 +30,12 @@
   },
   "india_sde_entry": {
     "consecutive_failures": 0,
-    "items": []
+    "items": [
+      "MailerMen: Frontend / React Developer (Fresher) | Jaipur, IN | Date: 2026-09-29 | Apply: https://in.linkedin.com/jobs/view/frontend-react-developer-fresher-at-mailermen-4471967639"
+    ]
   },
   "remote_worldwide_ai_ml": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   },
   "remote_worldwide_ios": {
