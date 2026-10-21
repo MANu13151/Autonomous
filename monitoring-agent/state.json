@@ -12,19 +12,19 @@
     "items": []
   },
   "bigtech_india_engineering": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   },
   "india_ios_swift": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   },
   "india_ml_ai_genai": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   },
   "india_python_fastapi": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   },
   "india_sde_entry": {
@@ -34,15 +34,15 @@
     ]
   },
   "remote_worldwide_ai_ml": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   },
   "remote_worldwide_ios": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   },
   "remote_worldwide_sde": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "items": []
   }
 }
