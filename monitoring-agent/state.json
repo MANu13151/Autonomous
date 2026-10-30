@@ -2,8 +2,7 @@
   "amazon_india_associate": {
     "consecutive_failures": 0,
     "items": [
-      "Software Engineer II | IN, TS, Hyderabad | Posted: October 21, 2026 | Link: https://www.amazon.jobs/en/jobs/10585206/software-engineer-ii",
-      "Software Engineer II | IN, TS, Hyderabad | Posted: September 24, 2026 | Link: https://www.amazon.jobs/en/jobs/10559372/software-engineer-ii"
+      "Software Engineer II | IN, TS, Hyderabad | Posted: October 21, 2026 | Link: https://www.amazon.jobs/en/jobs/10585206/software-engineer-ii"
     ]
   },
   "amazon_india_sde1": {
@@ -11,37 +10,37 @@
     "items": []
   },
   "bigtech_india_engineering": {
-    "consecutive_failures": 46,
+    "consecutive_failures": 47,
     "items": []
   },
   "india_ios_swift": {
-    "consecutive_failures": 46,
+    "consecutive_failures": 47,
     "items": []
   },
   "india_ml_ai_genai": {
-    "consecutive_failures": 46,
+    "consecutive_failures": 47,
     "items": []
   },
   "india_python_fastapi": {
-    "consecutive_failures": 46,
+    "consecutive_failures": 47,
     "items": []
   },
   "india_sde_entry": {
-    "consecutive_failures": 45,
+    "consecutive_failures": 46,
     "items": [
       "MailerMen: Frontend / React Developer (Fresher) | Jaipur, IN | Date: 2026-09-29 | Apply: https://in.linkedin.com/jobs/view/frontend-react-developer-fresher-at-mailermen-4471967639"
     ]
   },
   "remote_worldwide_ai_ml": {
-    "consecutive_failures": 46,
+    "consecutive_failures": 47,
     "items": []
   },
   "remote_worldwide_ios": {
-    "consecutive_failures": 46,
+    "consecutive_failures": 47,
     "items": []
   },
   "remote_worldwide_sde": {
-    "consecutive_failures": 46,
+    "consecutive_failures": 47,
     "items": []
   }
 }
