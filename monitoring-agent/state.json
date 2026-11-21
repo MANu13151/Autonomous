@@ -15,21 +15,22 @@
   },
   "india_ios_swift": {
     "consecutive_failures": 0,
-    "items": [
-      "Lascade: Junior iOS Developer | Kochi, IN | Date: None | Apply: https://in.linkedin.com/jobs/view/junior-ios-developer-at-lascade-4436637978"
-    ]
+    "items": []
   },
   "india_ml_ai_genai": {
     "consecutive_failures": 0,
-    "items": []
+    "items": [
+      "Msigma Gokulam: Junior AI Instructor | Thiruvananthapuram, IN | Date: 2026-11-05 | Apply: https://in.linkedin.com/jobs/view/junior-ai-instructor-at-msigma-gokulam-4486032666"
+    ]
   },
   "india_python_fastapi": {
     "consecutive_failures": 0,
     "items": [
-      "Innovateshield Solutions: Python Developer Trainee [ Entry Level ] | None, IN | Date: None | Apply: https://www.jobaaj.com/job/innovateshield-solutions-python-developer-trainee-entry-level-india-1-to-3-years-486703",
+      "Rigel Networks: Junior Python Developer | Vadodara, IN | Date: None | Apply: https://www.jobaaj.com/job/rigel-networks-junior-python-developer-vadodara-gujarat-india-0-to-2-years-409374",
       "Turing: Remote Python Developer | Chennai, IN | Date: None | Apply: https://www.foundit.in/job/remote-python-developer-turing-chennai-55400600",
-      "PrimefactorX: Fresher Python Developer | Chennai, IN | Date: None | Apply: https://www.jobaaj.com/job/primefactorx-fresher-python-developer-chennai-tamil-nadu-india-0-to-1-years-464943",
-      "Medi Nex Workforce: Python Developer | Entry Level | Fresher Internship (Python, Flask, PostgreSQL) | Tamia, IN | Date: 2026-11-07 | Apply: https://www.jobstore.com/in/job/l39145320/python-developer-entry-level-fresher-internship-python-flask-postgresql-job"
+      "Tarams: Junior Python Developer | Bengaluru, IN | Date: None | Apply: https://www.jobaaj.com/job/tarams-junior-python-developer-bengaluru-karnataka-india-1-to-2-years-394380",
+      "Medi Nex Workforce: Python Developer | Entry Level | Fresher Internship (Python, Flask, PostgreSQL) | Tamia, IN | Date: 2026-11-07 | Apply: https://www.jobstore.com/in/job/l39145320/python-developer-entry-level-fresher-internship-python-flask-postgresql-job",
+      "PrimefactorX: Fresher Python Developer | Chennai, IN | Date: None | Apply: https://www.jobaaj.com/job/primefactorx-fresher-python-developer-chennai-tamil-nadu-india-0-to-1-years-464943"
     ]
   },
   "india_sde_entry": {
