@@ -15,7 +15,9 @@
   },
   "india_ios_swift": {
     "consecutive_failures": 0,
-    "items": []
+    "items": [
+      "Lascade: Junior iOS Developer | Kochi, IN | Date: None | Apply: https://in.linkedin.com/jobs/view/junior-ios-developer-at-lascade-4436637978"
+    ]
   },
   "india_ml_ai_genai": {
     "consecutive_failures": 0,
@@ -24,8 +26,8 @@
   "india_python_fastapi": {
     "consecutive_failures": 0,
     "items": [
-      "Innovateshield Solutions: Python Developer Trainee [ Entry Level ] | None, IN | Date: None | Apply: https://www.jobaaj.com/job/innovateshield-solutions-python-developer-trainee-entry-level-india-1-to-3-years-486703",
-      "Medi Nex Workforce: Python Developer | Entry Level | Fresher Internship (Python, Flask, PostgreSQL) | None, IN | Date: 2026-11-06 | Apply: https://olibr.com/jobs/python-developer-entry-level-fresher-internship-python-flask-postgresql-medi-nex-skt7d"
+      "Turing: Remote Python Developer | Chennai, IN | Date: None | Apply: https://www.foundit.in/job/remote-python-developer-turing-chennai-55400600",
+      "Training Basket: Junior Python Developer Noida (India) | Noida, IN | Date: 2026-11-11 | Apply: https://www.shine.com/jobs/junior-python-developer-noida-india/training-basket/20057213"
     ]
   },
   "india_sde_entry": {
@@ -38,10 +40,7 @@
   },
   "remote_worldwide_ios": {
     "consecutive_failures": 0,
-    "items": [
-      "Filrsafekeep: iOS Developer Community Impact Foundation Las Cruces, NM | None, None \ud83c\udfe0 Remote | Date: 2026-11-16 | Apply: https://www.jobleads.com/us/job/ios-developer-community-impact-foundation-las-cruces-nm--las-cruces--ef5c424ee65040b54526b4ff4182782f5",
-      "Jobgether: Remote iOS Developer \u2014 SwiftUI, MVVM, Scalable Apps | None, None \ud83c\udfe0 Remote | Date: 2026-10-25 | Apply: https://www.jobleads.com/us/job/remote-ios-developer-swiftui-mvvm-scalable-apps--united-states--e1d60104c8c4abdb94fba2bf5b2d9f46a"
-    ]
+    "items": []
   },
   "remote_worldwide_sde": {
     "consecutive_failures": 0,
